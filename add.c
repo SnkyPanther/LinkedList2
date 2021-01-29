@@ -1,6 +1,6 @@
 #include "main.h"
 
-int add(struct node *prev, int number) {
+int add(struct node *prev, int number) {  // tries to add a node into the list
   struct node *curr, *new_node=init();    //defining a node the new node that is being added to the list
   if(new_node == NULL){   //if there is no memory left, which is unlikely, returns 0
     return 0;
@@ -21,4 +21,4 @@ int add(struct node *prev, int number) {
   prev->next=new_node;  //the loop exits when the curr next is NULL
   new_node->next=NULL;  // that means that the number that is being added is the biggest of the list
   return 1;             // and has to be put in the end of the list and have the new node next be NULL
-}
+}                       //returns 1 if succesful in adding the number

@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h>   //this file has the function names and the struct nodes and the two include
 #include<stdlib.h>
 struct node{
   int data;
